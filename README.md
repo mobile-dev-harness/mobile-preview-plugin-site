@@ -76,8 +76,9 @@ public package availability.
 - Open removal and technical details with the keyboard.
 - Enable reduced motion; navigation must not animate.
 - Serve beneath a nested path and verify assets and internal anchor navigation.
-- Inspect external links: only official DeepSeek, the public GitHub organization
-  and Apache license links are currently included.
+- Inspect external links: the header GitHub link opens the MPP source repository
+  in a new tab; access follows that repository's visibility. Other external links
+  point to official DeepSeek, the public GitHub organization and Apache licensing.
 
 ## License and status
 
