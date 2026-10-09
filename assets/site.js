@@ -1,8 +1,8 @@
 (() => {
   "use strict";
   const channelCopy = {
-    video: { label: "VIDEO PATH", description: "设备端采集并编码 H.264，经 MPP1 二进制媒体通道、Rust Host 与 DSH 认证 streaming Fetch 到达客户端，由 WebCodecs 解码。Host 和 Node 层不解码、不重新编码。" },
-    input: { label: "INPUT PATH", description: "Canvas 上的单指触摸与基础按键，经 DSH 认证的有界 POST 批次发送到独立控制 socket / worker，再由 Rust 设备端注入 Android。输入与视频分开，不等待启动等慢任务。" }
+    video: { label: "VIDEO PATH", description: "Android 在设备端采集并用 MediaCodec 编码；iOS Simulator 在 macOS 上读取 IOSurface，由 VideoToolbox 编码。H.264 经 MPP1 与 DSH 认证 streaming Fetch 到达客户端，由 WebCodecs 解码；媒体中继层只转发字节。" },
+    input: { label: "INPUT PATH", description: "Canvas 上的单指触摸与按键，经 DSH 认证的有界批次与控制通道，交给 Android 输入后端或 iOS Simulator 的 DTUHID。iOS 仅提供单指触摸与 Home；输入与视频通道分开，旧租约和错误几何会被拒绝。" }
   };
 
   function setupTabs(list, activate) {
