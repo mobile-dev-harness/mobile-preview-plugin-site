@@ -60,7 +60,7 @@ long-duration GUI runs and full performance measurement remain unqualified.
 ## Files
 
 - `index.html`: content, accessible semantic markup and initial status fallback.
-- `assets/style.css`: responsive graphite theme, native diagram and reduced-motion support.
+- `assets/style.css`: responsive deep-blue theme, native diagram and reduced-motion support.
 - `assets/site.js`: keyboard-accessible tabs, copy buttons and status rendering.
 - `assets/status.js`: public qualification data, separate from presentation code.
 - `assets/mark.svg`: original code-native product mark.
