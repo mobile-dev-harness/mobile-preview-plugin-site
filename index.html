@@ -7,7 +7,7 @@
   <meta name="description" content="Mobile Preview Plugin 是独立的 Rust 移动设备预览框架，在 DeepSeek Harness Web 和 Desktop 中查看和操作 Android 设备与 iOS Simulator。非官方实验性预览，不支持 iOS 真机。">
   <title>Mobile Preview Plugin — Android 与 iOS Simulator 预览</title>
   <link rel="icon" type="image/svg+xml" href="./assets/mark.svg?v=48a9773960">
-  <link rel="stylesheet" href="./assets/style.css?v=d99394e302">
+  <link rel="stylesheet" href="./assets/style.css?v=1302879e51">
   <script defer src="./assets/status.js"></script>
   <script defer src="./assets/site.js"></script>
 </head>
@@ -50,6 +50,21 @@
     </section>
 
     <div class="spec-strip"><div class="container spec-inner"><div><span class="spec-label">ENGINE</span><strong>Rust native</strong></div><div><span class="spec-label">DEVICE</span><strong>Android + iOS Simulator</strong></div><div><span class="spec-label">SURFACE</span><strong>DSH Web + Desktop</strong></div><div><span class="spec-label">TRANSPORT</span><strong>Video + control</strong></div></div></div>
+
+    <section class="section container screenshots-section" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="section-heading"><div><div class="eyebrow section-number">IN THE WORKSPACE</div><h2 id="screenshots-title">聊天与设备画面，同屏呈现。</h2></div><p>DSH Web 实际界面截图。<br>点击图片，可在新窗口查看原图。</p></div>
+      <div class="screenshot-grid">
+        <figure class="screenshot-card">
+          <a class="screenshot-link" href="./assets/screenshots/dsh-ios-simulator.jpg" target="_blank" rel="noopener noreferrer" aria-label="查看 iOS Simulator 截图原图（新窗口打开）"><img src="./assets/screenshots/dsh-ios-simulator.jpg" width="1000" height="586" loading="lazy" alt="DSH Web 中的聊天回复与 iPhone 17 系统设置实时预览，旁有设备控制按钮"></a>
+          <figcaption><h3>iOS Simulator</h3><p>iPhone 17 · iOS 26.4 · Xcode 26.4</p></figcaption>
+        </figure>
+        <figure class="screenshot-card">
+          <a class="screenshot-link" href="./assets/screenshots/dsh-android-emulator.jpg" target="_blank" rel="noopener noreferrer" aria-label="查看 Android Emulator 截图原图（新窗口打开）"><img src="./assets/screenshots/dsh-android-emulator.jpg" width="1000" height="586" loading="lazy" alt="DSH Web 中的聊天回复与 Android 系统设置实时预览，旁有设备控制按钮"></a>
+          <figcaption><h3>Android Emulator</h3><p>Android 15 · API 35 · arm64</p></figcaption>
+        </figure>
+      </div>
+      <div class="screenshot-notes"><p class="screenshot-version">MPP 0.1.0-preview.5 · DSH Web 0.2.1-alpha.1</p><p>截图已裁去本机信息。对话为设计讨论，设备预览显示系统设置。截图展示界面并排使用的实际效果；验收结果与适用范围见<a href="#compatibility">支持范围</a>。</p></div>
+    </section>
 
     <section class="section container" id="capabilities" aria-labelledby="capabilities-title">
       <div class="section-heading"><div><div class="eyebrow section-number">01 / CAPABILITIES</div><h2 id="capabilities-title">看见设备，也能直接操作。</h2></div><p>从明确选择设备，到第一帧与每次触摸。<br>把预览所需的路径，放在一个轻量面板里。</p></div>

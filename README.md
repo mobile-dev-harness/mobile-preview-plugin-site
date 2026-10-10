@@ -64,6 +64,13 @@ long-duration GUI runs and full performance measurement remain unqualified.
 - `assets/site.js`: keyboard-accessible tabs, copy buttons and status rendering.
 - `assets/status.js`: public qualification data, separate from presentation code.
 - `assets/mark.svg`: original code-native product mark.
+- `assets/screenshots/dsh-ios-simulator.jpg` and
+  `assets/screenshots/dsh-android-emulator.jpg`: reviewed 1000 × 586 public DSH Web
+  captures for the screenshot gallery. Both show real chat replies, live system
+  Settings previews and device controls, cropped to omit local host identifiers.
+  The captures use MPP `0.1.0-preview.5` with DSH Web `0.2.1-alpha.1`: iPhone 17 /
+  iOS 26.4 / Xcode 26.4 and Android 15 / API 35 / arm64. The conversation is a
+  design discussion; it does not show an implemented app or extend qualification.
 
 No build, dependencies, external fonts, CDN, analytics or remote scripts are
 required. All asset paths are relative, so the site works beneath any GitHub Pages
@@ -123,8 +130,10 @@ adapter range is not a compatibility promise. Native capture or CLI installation
 is not GUI qualification. More vendors, long-duration runs and complete performance
 measurement remain outside these records.
 
-Public state is intentionally summarized. Do not copy internal evidence, private
-CI links, hostnames, local paths or screenshots into this site.
+Public state is intentionally summarized. Only reviewed public screenshots may be
+included. Exclude secrets, private CI links, hostnames, local paths and other local
+identifiers from every capture; keep internal evidence private. Screenshot captions
+must identify the demonstrated environment without extending qualification claims.
 
 ## Manual checks
 
@@ -136,6 +145,8 @@ CI links, hostnames, local paths or screenshots into this site.
 - Enable reduced motion; navigation must not animate.
 - Serve beneath a nested path and verify assets and internal anchor navigation.
 - Check that the source and release links target the public project repository.
+- Check both screenshot cards, full-size links, captions and image loading at each
+  viewport width; confirm public captures contain no secrets or local identifiers.
 - Before publication, check the exact release asset and SHA-256, remove stale
   pending text, and bind acceptance statements to that archive.
 
