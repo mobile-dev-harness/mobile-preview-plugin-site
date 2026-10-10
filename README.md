@@ -64,13 +64,15 @@ long-duration GUI runs and full performance measurement remain unqualified.
 - `assets/site.js`: keyboard-accessible tabs, copy buttons and status rendering.
 - `assets/status.js`: public qualification data, separate from presentation code.
 - `assets/mark.svg`: original code-native product mark.
-- `assets/screenshots/dsh-ios-simulator.jpg` and
-  `assets/screenshots/dsh-android-emulator.jpg`: reviewed 1000 × 586 public DSH Web
+- `assets/screenshots/dsh-ios-workflow.jpg` and
+  `assets/screenshots/dsh-android-workflow.jpg`: reviewed 1000 × 586 public DSH Web
   captures for the screenshot gallery. Both show real chat replies, live system
   Settings previews and device controls, cropped to omit local host identifiers.
-  The captures use MPP `0.1.0-preview.5` with DSH Web `0.2.1-alpha.1`: iPhone 17 /
-  iOS 26.4 / Xcode 26.4 and Android 15 / API 35 / arm64. The conversation is a
-  design discussion; it does not show an implemented app or extend qualification.
+  The chats request an existing emulator or Simulator and its preview panel. The
+  agent selects the platform; the user chooses and connects the device. The
+  captures use MPP `0.1.0-preview.5` with DSH Web `0.2.1-alpha.1`: iPhone 17 /
+  iOS 26.4 / Xcode 26.4 and Android 15 / API 35 / arm64. The conversation is an
+  emulator setup request; it does not show an implemented app or extend qualification.
 
 No build, dependencies, external fonts, CDN, analytics or remote scripts are
 required. All asset paths are relative, so the site works beneath any GitHub Pages
